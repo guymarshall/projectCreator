@@ -18,3 +18,7 @@ match platform:
 print(f"Directory is {default_directory}")
 
 print("DONE")
+
+# rust (linux) -> f"cargo new {project_name} && cd {project_name} && code ."
+# php (linux) -> f"mkdir {project_name} && cd {project_name} && touch index.php && code ."
+# add variable before match called command_to_execute, then append in match statement, then run after match statement
