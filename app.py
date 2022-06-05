@@ -2,12 +2,13 @@ from sys import platform
 
 username = "testuser"
 
-if platform == "linux" or platform == "linux2":
-    default_directory = f"/home/{username}"
-elif platform == "darwin":
-    default_directory = f"/Users/{username}"
-elif platform == "win32":
-    default_directory = f"/Users/{username}"
+match platform:
+    case "linux" | "linux2":
+        default_directory = f"/home/{username}"
+    case "darwin":
+        default_directory = f"/Users/{username}"
+    case "win32":
+        default_directory = f"/Users/{username}"
 
 print(f"Directory is {default_directory}")
 
