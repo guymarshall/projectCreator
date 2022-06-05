@@ -1,0 +1,5 @@
+-example (configurable default location)
+
+name of project: helloWorld
+programming language: php
+folder "helloWorld" created in "php" folder with "index.php" starting file
