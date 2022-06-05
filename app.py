@@ -16,12 +16,4 @@ match platform:
 
 print(f"Directory is {default_directory}")
 
-# match platform:
-#     case "Linux":
-#         print("Do Linux commands")
-#     case "Mac OS":
-#         print("Do Mac OS commands")
-#     case "Windows":
-#         print("Do Windows commands")
-
 print("DONE")
