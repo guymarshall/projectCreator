@@ -2,6 +2,7 @@ from sys import platform
 import os
 
 username = "testuser"
+project_name = input("Name of project: ")
 
 match platform:
     case "linux" | "linux2":
