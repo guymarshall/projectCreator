@@ -24,7 +24,8 @@ full_path = f"{user_path}/{project_name}"
 commands = {
     "rust": f"cargo new {project_name} && cd {project_name} && code .",
     "php": f"mkdir {project_name} && cd {project_name} && {new_file_command} index.php && code .",
-    "python": f"mkdir {project_name} && cd {project_name} && {new_file_command} app.py && code ."
+    "python": f"mkdir {project_name} && cd {project_name} && {new_file_command} app.py && code .",
+    "javascript": f"mkdir {project_name} && cd {project_name} && {new_file_command} index.html && {new_file_command} script.js && code ."
 }
 
 chosen_command = commands.get(programming_language)
