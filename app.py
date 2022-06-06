@@ -18,7 +18,9 @@ match platform:
 
 full_path = f"{user_path}/{project_name}"
 
-
+commands = {
+    "rust": f"cargo new {project_name} && cd {project_name} && code ."
+}
 
 # rust (linux) -> f"cargo new {project_name} && cd {project_name} && code ."
 # php (linux) -> f"mkdir {project_name} && cd {project_name} && touch index.php && code ."
