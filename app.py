@@ -6,18 +6,18 @@ project_name = input("Name of project: ").replace(" ", "_")
 
 match platform:
     case "linux" | "linux2":
-        default_directory = f"/home/{username}"
+        user_path = f"/home/{username}"
         os.system("ls -lh")
     case "darwin":
-        default_directory = f"/Users/{username}"
+        user_path = f"/Users/{username}"
         os.system("ls -lh")
     case "win32":
-        default_directory = f"/Users/{username}"
+        user_path = f"/Users/{username}"
         os.system("dir")
 
-full_directory = f"{default_directory}/{project_name}"
+full_path = f"{user_path}/{project_name}"
 
-print(f"Directory is {default_directory}")
+print(f"Directory is {user_path}")
 
 print("DONE")
 
