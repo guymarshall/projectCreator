@@ -2,7 +2,7 @@ from sys import platform
 import os
 
 username = "testuser"
-project_name = input("Name of project: ")
+project_name = input("Name of project: ").replace(" ", "_")
 
 match platform:
     case "linux" | "linux2":
