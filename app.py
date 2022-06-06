@@ -4,7 +4,6 @@ import os
 username = "testuser"
 project_name = input("Name of project: ").replace(" ", "_")
 programming_language = input("Programming language: ").lower()
-command_separator = "&&"
 
 match platform:
     case "linux" | "linux2":
