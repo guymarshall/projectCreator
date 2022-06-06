@@ -4,6 +4,7 @@ import os
 username = "testuser"
 project_name = input("Name of project: ").replace(" ", "_")
 programming_language = input("Programming language: ").lower()
+command_separator = "&&"
 
 match platform:
     case "linux" | "linux2":
@@ -18,9 +19,7 @@ match platform:
 
 full_path = f"{user_path}/{project_name}"
 
-print(f"Directory is {user_path}")
 
-print("DONE")
 
 # rust (linux) -> f"cargo new {project_name} && cd {project_name} && code ."
 # php (linux) -> f"mkdir {project_name} && cd {project_name} && touch index.php && code ."
