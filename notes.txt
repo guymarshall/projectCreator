@@ -4,4 +4,4 @@ name of project: helloWorld
 programming language: php
 folder "helloWorld" created in "php" folder with "index.php" starting file
 
--make batch file for windows / sh for linux/mac to run "pip install" for all required packages
+-once finished, complete batch file for windows / sh for linux/mac to run "pip install" for all required packages
