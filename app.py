@@ -15,6 +15,8 @@ match platform:
         default_directory = f"/Users/{username}"
         os.system("dir")
 
+full_directory = f"{default_directory}/{project_name}"
+
 print(f"Directory is {default_directory}")
 
 print("DONE")
