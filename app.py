@@ -9,15 +9,12 @@ match platform:
     case "linux" | "linux2":
         user_path = f"/home/{username}"
         new_file_command = "touch"
-        os.system("ls -lh")
     case "darwin":
         user_path = f"/Users/{username}"
         new_file_command = "touch"
-        os.system("ls -lh")
     case "win32":
         user_path = f"/Users/{username}"
         new_file_command = "type nul >"
-        os.system("dir")
 
 full_path = f"{user_path}/{project_name}"
 
