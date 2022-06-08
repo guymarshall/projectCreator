@@ -28,3 +28,5 @@ commands = {
 chosen_command = commands.get(programming_language)
 
 final_command_to_run = f"cd {user_path} && {chosen_command}"
+
+os.system(final_command_to_run)
